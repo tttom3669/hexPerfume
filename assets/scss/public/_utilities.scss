@@ -1,0 +1,57 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px calc($gutter-width/2);
+}
+
+// flex
+
+@each $key, $value in $justify-content {
+  .justify-content-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key, $value in $align-items {
+  .align-items-#{$key} {
+    align-items: $value;
+  }
+}
+
+// .row{
+
+// }
+
+.d-flex {
+  display: flex;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+// margin
+@each $key, $value in $direction {
+  @each $sizeKey, $sizeValue in $mp-size {
+    .m#{$key}-#{$sizeKey} {
+      margin-#{$value}: $sizeValue;
+    }
+  }
+}
+
+// padding
+@each $key, $value in $direction {
+  @each $sizeKey, $sizeValue in $mp-size {
+    .p#{$key}-#{$sizeKey} {
+      padding-#{$value}: $sizeValue;
+    }
+  }
+}
+@each $sizeKey, $sizeValue in $mp-size {
+  .py-#{$sizeKey} {
+    padding:  $sizeValue 0px;
+  }
+  .p-#{$sizeKey} {
+    padding: $sizeValue;
+  }
+}
