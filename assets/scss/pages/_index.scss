@@ -1,6 +1,11 @@
 .banner{
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
-  height: 870px;
+  height: calc( 100vh - 56px);
+  width: 100%;
   background-size:cover;
-  background-position:  center center;
+  background-position:  left center;
+  padding-top:  295px;;
+}
+.banner-content{
+  max-width: 445px;
 }

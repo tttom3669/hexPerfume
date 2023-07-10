@@ -6,9 +6,24 @@
 
 // flex
 
+@each $value in $flex-direction {
+  .flex-#{$value} {
+    flex-direction: $value;
+  }
+}
+
 @each $key, $value in $justify-content {
   .justify-content-#{$key} {
     justify-content: $value;
+  }
+}
+@each $bp-key, $bp-value in $breakpoint {
+  @media (max-width: $bp-value) {
+    @each $key, $value in $justify-content {
+      .justify-content-#{$bp-key}-#{$key} {
+        justify-content: $value;
+      }
+    }
   }
 }
 
@@ -21,13 +36,31 @@
 // .row{
 
 // }
-
-.d-flex {
-  display: flex;
+// display
+@each $value in $display {
+  .d-#{$value} {
+    display: $value;
+  }
+}
+@each $bp-key, $bp-value in $breakpoint {
+  @media (max-width: $bp-value) {
+    @each $value in $display {
+      .d-#{$bp-key}-#{$value} {
+        display: $value;
+      }
+    }
+  }
 }
 
 .gap-32 {
   gap: 32px;
+}
+
+// color
+@each $key, $value in $color {
+  .text-#{$key} {
+    color: $value;
+  }
 }
 
 // margin
@@ -36,6 +69,14 @@
     .m#{$key}-#{$sizeKey} {
       margin-#{$value}: $sizeValue;
     }
+  }
+}
+@each $sizeKey, $sizeValue in $mp-size {
+  .mx-#{$sizeKey} {
+    margin: 0px $sizeValue;
+  }
+  .m-#{$sizeKey} {
+    margin: $sizeValue;
   }
 }
 
@@ -49,9 +90,41 @@
 }
 @each $sizeKey, $sizeValue in $mp-size {
   .py-#{$sizeKey} {
-    padding:  $sizeValue 0px;
+    padding: $sizeValue 0px;
   }
   .p-#{$sizeKey} {
     padding: $sizeValue;
   }
+}
+
+// text
+@each $key, $value in $title-size {
+  .h#{$key} {
+    font-size: $value;
+    font-weight: bold;
+  }
+}
+@each $key, $value in $font-size {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  max-width: 350px;
+  height: 60px;
+}
+.btn:hover {
+  background: #ffffff4d 0% 0% no-repeat padding-box;
+}
+.btn-black {
+  border: 2px solid #000000;
+}
+.btn-black:hover {
+  background: #0000000d 0% 0% no-repeat padding-box;
 }

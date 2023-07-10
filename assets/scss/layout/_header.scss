@@ -1,3 +1,6 @@
+header{
+  position: relative;
+}
 .logo{
   display: block;
   width: 128px;
@@ -6,4 +9,45 @@
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+  object-fit: cover;
+}
+
+.mobile-cart{
+  position: relative;
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 8px;
+    top: -8px;
+    right: -8px;
+    height: 13px;
+    width: 16px;
+    font-size: 12px;
+    background-color: #916000;
+    color: white;
+    border-radius: 50%;
+  }
+}
+
+.mobile-navbar{
+  width: 100%;
+  position: absolute;
+  bottom: 100;
+  z-index: 2;
+  background-color: #707070;
+  text-align: center;
+  li{
+    border-bottom: 1px solid white;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  a{
+    display: block;
+    color: #FFFFFF;
+    padding: 16px 0;
+    font-size: 20px;
+  }
 }

@@ -1,7 +1,7 @@
 <header>
   <nav class="container d-flex justify-content-between align-items-center py-9">
     <a href="index.html" class="logo">D'PERFUME</a>
-    <ul class="d-flex gap-32">
+    <ul class="d-flex gap-32 d-md-none">
       <li>
         <a href="#"><i class="bi bi-shop me-2"></i>Product</a>
       </li>
@@ -15,5 +15,20 @@
         <a href="#"><i class="bi bi-cart-fill me-2"></i>Cart(3)</a>
       </li>
     </ul>
+    <ul class="d-none d-md-flex">
+      <li class="me-10">
+        <a href="#" class="mobile-cart"><i class="bi bi-cart-fill me-2"></i><span>3</span></a>
+      </li>
+      <li class="mx-10"><a href="#" class="mobile-bar"><img src="../assets/images/bars.svg" alt="bars"></a></li>
+    </ul>
   </nav>
 </header>
+<nav class="d-none mobile-navbar">
+    <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">log in</a></li>
+    </ul>
+</nav>

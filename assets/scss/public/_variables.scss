@@ -1,20 +1,58 @@
 $gutter-width: 30px;
 
-// flex
-$justify-content:(
-    center:center,
-    between:space-between,
+// color
+$color: (
+  'white': #ffffff,
 );
 
-$align-items:(
-    center:center,
+// breakpoint
+$breakpoint:(
+    md:768px
+);
+
+// display
+$display:(
+    none,
+    block,
+    flex,
+);
+
+// flex
+$flex-direction:(
+    column,
+    row
+);
+
+$justify-content: (
+  center: center,
+  between: space-between,
+  end:flex-end,
+);
+
+$align-items: (
+  center: center,
 );
 
 // margin、padding
-$mp-size:(
-    2:2px,
-    9:9px,
+$mp-size: (
+  2: 2px,
+  9: 9px,
+  10:10px,
+  13:13px,
+  16:16px,
+  20:20px,
+  auto: auto,
 );
-$direction:(
-    e: right,
-)
+$direction: (
+  s: left,
+  e: right,
+  b: bottom,
+);
+// text
+$title-size: (
+  1: 40px,
+);
+$font-size: (
+  1: 28px,
+  2: 24px,
+);
