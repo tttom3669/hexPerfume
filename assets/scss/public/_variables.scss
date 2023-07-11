@@ -3,30 +3,25 @@ $gutter-width: 30px;
 // color
 $color: (
   'white': #ffffff,
+  'black': #000000,
+  'lightBrown': #ac8a46,
 );
 
 // breakpoint
-$breakpoint:(
-    md:768px
+$breakpoint: (
+  md: 768px,
 );
 
 // display
-$display:(
-    none,
-    block,
-    flex,
-);
+$display: (none, block, flex);
 
 // flex
-$flex-direction:(
-    column,
-    row
-);
+$flex-direction: (column, column-reverse, row, row-reverse);
 
 $justify-content: (
   center: center,
   between: space-between,
-  end:flex-end,
+  end: flex-end,
 );
 
 $align-items: (
@@ -36,14 +31,21 @@ $align-items: (
 // margin、padding
 $mp-size: (
   2: 2px,
+  4: 4px,
+  8: 8px,
   9: 9px,
-  10:10px,
-  13:13px,
-  16:16px,
-  20:20px,
+  10: 10px,
+  13: 13px,
+  16: 16px,
+  20: 20px,
+  32:32px,
+  40: 40px,
+  52: 52px,
+  60: 60px,
   auto: auto,
 );
 $direction: (
+  t: top,
   s: left,
   e: right,
   b: bottom,
@@ -51,8 +53,12 @@ $direction: (
 // text
 $title-size: (
   1: 40px,
+  2: 32px,
 );
 $font-size: (
   1: 28px,
   2: 24px,
+  3: 20px,
 );
+
+$font-weight: (600);

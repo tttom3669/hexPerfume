@@ -14,4 +14,7 @@ img{
 a{
     text-decoration: none;
     color: #8D8D8D;
+    &:hover{
+        opacity: 0.8;
+    }
 }
