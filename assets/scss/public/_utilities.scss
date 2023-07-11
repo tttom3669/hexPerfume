@@ -20,6 +20,19 @@
   }
 }
 
+@each $bp-key, $bp-value in $breakpoint {
+  @media (max-width: $bp-value) {
+    @for $i from 1 through 12 {
+      .col-#{$bp-key}-#{$i} {
+        position: relative;
+        max-width: 100% * calc($i / 12);
+        flex: 0 0 100% * calc($i / 12);
+        padding: 0px calc($gutter-width/2);
+      }
+    }
+  }
+}
+
 // flex
 
 @each $value in $flex-direction {
@@ -75,6 +88,11 @@
     color: $value;
   }
 }
+@each $key, $value in $color {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
 
 // margin
 @each $key, $value in $direction {
@@ -89,7 +107,7 @@
     margin: 0px $sizeValue;
   }
   .my-#{$sizeKey} {
-    margin: $sizeValue 0px ;
+    margin: $sizeValue 0px;
   }
   .m-#{$sizeKey} {
     margin: $sizeValue;
@@ -106,15 +124,15 @@
       }
     }
     @each $sizeKey, $sizeValue in $mp-size {
-        .mx-#{$bp-key}-#{$sizeKey} {
-          margin: 0px $sizeValue;
-        }
-        .my-#{$bp-key}-#{$sizeKey} {
-            margin: $sizeValue 0px ;
-          }
-        .m-#{$bp-key}-#{$sizeKey} {
-          margin: $sizeValue;
-        }
+      .mx-#{$bp-key}-#{$sizeKey} {
+        margin: 0px $sizeValue;
+      }
+      .my-#{$bp-key}-#{$sizeKey} {
+        margin: $sizeValue 0px;
+      }
+      .m-#{$bp-key}-#{$sizeKey} {
+        margin: $sizeValue;
+      }
     }
   }
 }
@@ -136,6 +154,18 @@
   }
 }
 
+@each $bp-key, $bp-value in $breakpoint {
+  @media (max-width: $bp-value) {
+    @each $key, $value in $direction {
+      @each $sizeKey, $sizeValue in $mp-size {
+        .p#{$key}-#{$bp-key}-#{$sizeKey} {
+          padding-#{$value}: $sizeValue;
+        }
+      }
+    }
+  }
+}
+
 // text
 @each $key, $value in $title-size {
   .h#{$key} {
@@ -152,6 +182,10 @@
   .fw-#{$value} {
     font-weight: $value;
   }
+}
+
+.text-line-through {
+  text-decoration: line-through;
 }
 
 .btn {

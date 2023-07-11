@@ -5,6 +5,8 @@ $color: (
   'white': #ffffff,
   'black': #000000,
   'lightBrown': #ac8a46,
+  'lightGray': #e0e0e0,
+  'gray': #8d8d8d,
 );
 
 // breakpoint
@@ -38,7 +40,9 @@ $mp-size: (
   13: 13px,
   16: 16px,
   20: 20px,
-  32:32px,
+  24: 24px,
+  32: 32px,
+  36: 36px,
   40: 40px,
   52: 52px,
   60: 60px,
@@ -61,4 +65,4 @@ $font-size: (
   3: 20px,
 );
 
-$font-weight: (600);
+$font-weight: (300, 500, 600);
