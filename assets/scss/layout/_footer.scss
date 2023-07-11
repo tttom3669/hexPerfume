@@ -1,4 +1,47 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+  background-size: cover;
+  background-position: left center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer-logo{
+  display: block;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite.png?raw=true');
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.subscribe{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 112px;
+}
+.subscribe-button{
+  margin-top: 20px;
+  max-width: 350px;
+  display: flex;
+  height: 60px;
+  border: 2px solid #916000;
+  border-radius: 4px;
+  background-color:  #916000;
+  input{
+    padding-left: 15px;
+    flex: 2 1 auto;
+    border: none;
+    outline: none;
+  }
+  button{
+    flex: 1 1 131px;
+    max-width: 129px;
+    border: none;
+    &:hover{
+      background-color: #ac8a46;
+    }
+  }
 }

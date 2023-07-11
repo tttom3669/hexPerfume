@@ -61,7 +61,15 @@
     align-items: $value;
   }
 }
-
+@each $bp-key, $bp-value in $breakpoint {
+  @media (max-width: $bp-value) {
+    @each $key, $value in $align-items {
+      .align-items-#{$bp-key}-#{$key} {
+        align-items: $value;
+      }
+    }
+  }
+}
 // display
 @each $value in $display {
   .d-#{$value} {
