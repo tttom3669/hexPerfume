@@ -51,8 +51,11 @@
     flex:1 1 auto;
     height: 540px;
     @media(max-width:768px) {
+      object-position: center bottom;
+      width:100%;
+    }
+    @media (max-width: 480px) {
       height: 350px;
-      max-width:100%;
     }
   }
   .card-content{

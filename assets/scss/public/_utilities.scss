@@ -70,6 +70,10 @@
     }
   }
 }
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
 // display
 @each $value in $display {
   .d-#{$value} {
@@ -86,11 +90,10 @@
   }
 }
 
-.gap-28{
-    gap: 28px;
-}
-.gap-32 {
-  gap: 32px;
+@each $key, $value in $gap-size {
+  .gap-#{$key} {
+    gap: $value;
+  }
 }
 
 // color
@@ -195,8 +198,10 @@
   }
 }
 
-.text-line-through {
-  text-decoration: line-through;
+@each $value in $text-decoration {
+  .text-#{$value} {
+    text-decoration: $value;
+  }
 }
 
 .btn {
@@ -216,4 +221,14 @@
 }
 .btn-black:hover {
   background: #0000000d 0% 0% no-repeat padding-box;
+}
+.img-hover{
+    transition: all 1s;
+}
+.img-hover:hover{
+    transform: scale(1.3,1.3);
+
+}
+.overflow-hidden{
+    overflow: hidden;
 }

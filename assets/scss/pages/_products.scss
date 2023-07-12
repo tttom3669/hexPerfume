@@ -1,0 +1,29 @@
+.products-list{
+    img{
+        height: 255px;
+        width: 100%;
+    }
+}
+.product-2{
+    object-position: center bottom;
+ }
+ .product-6{
+     object-position: left center;
+ }
+.pagination{
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19px;
+        &:hover{
+            color: #AC8A46;
+            border-bottom:1px solid  #AC8A46;
+        }
+    }
+    
+}
+.page-active{
+    border-bottom:1px solid  #AC8A46;
+}
+

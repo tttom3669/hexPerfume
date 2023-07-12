@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 @import './public/reset.scss';
 @import './public/variables.scss';
 @import './public/base.scss';
@@ -9,3 +11,4 @@
 
 // pages
 @import './pages/index.scss';
+@import './pages/products.scss';

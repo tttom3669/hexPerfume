@@ -30,18 +30,28 @@
   border: 2px solid #916000;
   border-radius: 4px;
   background-color:  #916000;
+  @media(max-width:480px) {
+    max-width: 100%;
+  }
   input{
+    max-width: 214px;
     padding-left: 15px;
     flex: 2 1 auto;
     border: none;
     outline: none;
+    @media(max-width:480px) {
+      max-width: 66.67%;
+    }
   }
   button{
-    flex: 1 1 131px;
+    flex: 1 1 auto;
     max-width: 129px;
     border: none;
     &:hover{
       background-color: #ac8a46;
+    }
+    @media(max-width:480px) {
+      max-width: 33.33%;
     }
   }
 }
