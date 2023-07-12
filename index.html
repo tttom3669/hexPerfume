@@ -5,19 +5,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>香水電商</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-4d864dfa.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4d4d0274.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/all-7143d63f.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/all-33a2474f.css">
   </head>
   <body>
-    <!-- <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <header>
+  <nav class="container d-flex justify-content-between align-items-center pt-9 pb-9">
+    <a href="index.html" class="logo">D'PERFUME</a>
+    <ul class="d-flex gap-32 d-md-none">
+      <li>
+        <a href="product.html"><i class="bi bi-shop me-2"></i>Product</a>
+      </li>
+      <li>
+        <a href="#"><i class="bi bi-person me-2"></i>log in</a>
+      </li>
+      <li>
+        <a href="#"><i class="bi bi-heart-fill me-2"></i>Wishlist</a>
+      </li>
+      <li>
+        <a href="#"><i class="bi bi-cart-fill me-2"></i>Cart(3)</a>
+      </li>
+    </ul>
+    <ul class="d-none d-md-flex">
+      <li class="me-10">
+        <a href="#" class="mobile-cart"><i class="bi bi-cart-fill me-2"></i><span>3</span></a>
+      </li>
+      <li class="mx-10"><a href="#" class="mobile-bar"><img src="/web-layout-training-vite/assets/bars-81a97ab5.svg" alt="bars"></a></li>
+    </ul>
+  </nav>
+</header>
+<nav class="d-none mobile-navbar">
+    <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">log in</a></li>
+    </ul>
+</nav>
 
-    <footer class="footer">我是 footer</footer> -->
+    <div class="banner text-white">
+      <div
+        class="container d-flex justify-content-end justify-content-md-center"
+      >
+        <div class="banner-content">
+          <h1 class="h1">Perfume your day</h1>
+          <p class="fs-2 mb-16">
+            A perfume is like a piece of clothing, a message, a way of
+            presenting oneself a costume that according to the person who wears
+            it.
+          </p>
+          <a href="#" class="text-white fs-1 btn fw-500">Shop now</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <ul class="py-60 py-md-40">
+        <li class="productList flex-row-reverse">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index2.jpg?raw=true"
+            alt="Gabrielle CHANEL"
+          />
+          <div class="list-content">
+            <h3 class="h2 mt-md-8">Gabrielle CHANEL</h3>
+            <p class="fs-3 mb-16 mb-md-8 fw-300">
+              全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。
+              極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。
+            </p>
+            <a href="#" class="text-lightBrown fw-600">查看更多</a>
+          </div>
+        </li>
+        <li class="productList mt-md-32">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true"
+            alt="Five O’clock Au Gingembre"
+          />
+          <div class="list-content">
+            <h3 class="h2 mt-md-8">Five O’clock Au Gingembre</h3>
+            <p class="fs-3 mb-16 mb-md-8 fw-300">
+              生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。
+            </p>
+            <a href="#" class="text-lightBrown fw-600">查看更多</a>
+          </div>
+        </li>
+        <li class="productList flex-row-reverse mt-md-32">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index4.jpg?raw=true"
+            alt="CHANEL N°5"
+          />
+          <div class="list-content">
+            <h3 class="h2 mt-md-8">CHANEL N°5</h3>
+            <p class="fs-3 mb-16 mb-md-8 fw-300">
+              N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+            </p>
+            <a href="#" class="text-lightBrown fw-600">查看更多</a>
+          </div>
+        </li>
+        <li class="productList productList-plan mt-md-32">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true"
+            alt="Plan a free online training"
+          />
+          <div class="list-content">
+            <h4 class="fs-2 fw-600 mt-md-8 mb-md-4">
+              1.<br />Levels of Preventive Maintenance Compliance
+            </h4>
+            <p class="mb-52 mb-md-20 fw-300">
+              The core idea of preventative maintenance is the performance of
+              proactive actions against unscheduled downtime in order to
+              identify potential defects before they evolve into something more
+              severe.
+            </p>
+            <h4 class="fs-2 fw-600 mt-md-8 mb-md-4">
+              2.<br />Percentage of Planned Maintenance
+            </h4>
+            <p class="mb-52 mb-md-20 fw-300">
+              The planned maintenance percentage is the total planned
+              maintenance time in your CMMS software over a date range over the
+              total number of hours of a service performed by the technicians.
+            </p>
+            <h4 class="fs-2 fw-600 mt-md-8 mb-md-4">
+              3.<br />Critical percentage of planned maintenance
+            </h4>
+            <p class="mb-60 mb-md-20 fw-300">
+              Calculating the critical percentage of planned maintenance will
+              help you prioritize the most important operations that should be
+              performed immediately.
+            </p>
+            <a href="#" class="btn btn-black text-black fs-3 fw-500"
+              >Plan a free online training</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-lightGray">
+      <div class="container">
+        <ul class="row py-40 pt-md-32 pb-md-36">
+          <li class="col-4 col-md-12 product-card">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index6.jpg?raw=true"
+              alt="Poppy & Barley"
+            />
+            <div class="card-content fw-300 mt-8">
+              <a href="#" class="text-black">
+              <h3 class="fs-2 fw-600">Poppy & Barley</h3>
+              </a>
+              <p>Jo Malone</p>
+              <div class="d-flex mt-16 mt-md-4">
+                <p>NT$1,380</p>
+                <p class="text-gray text-line-through">NT$1,580</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-4 col-md-12 product-card mt-md-32">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index7.jpg?raw=true"
+              alt="Body Wash"
+            />
+            <div class="card-content fw-300 mt-8">
+              <a href="#" class="text-black">
+                <h3 class="fs-2 fw-600">Body Wash</h3>
+              </a>
+              <p>Curology</p>
+              <div class="d-flex mt-16 mt-md-4">
+                <p>NT$1,580</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-4 col-md-12 product-card mt-md-24">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index8.jpg?raw=true"
+              alt="Apple Cider Vinegar Capsule"
+              class="soldout"
+            />
+            <div class="soldout-text">Sold out</div>
+            <div class="card-content fw-300 mt-8">
+              <a href="#" class="text-black">
+                <h3 class="fs-2 fw-600">Apple Cider Vinegar Capsule</h3>
+              </a>
+              <p>Tonik</p>
+              <div class="d-flex mt-16 mt-md-4">
+                <p>NT$1,580</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row py-60 py-md-40">
+        <div class="col-8 col-md-12">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index9.jpg?raw=true" alt="Bottle-Recycling">
+        </div>
+        <div class="col-4 col-md-12">
+          <h3 class="h2 mt-md-8">Bottle-Recycling</h3>
+          <p class="mb-16 mb-md-8 fs-3 fw-300">Recycle your used empty bottles and be rewarded!</p>
+          <p class="mb-16 mb-md-8 fw-300">
+            For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.
+          </p>
+          <a href="#" class="text-lightBrown fw-600">查看更多</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="container subscribe">
+    <h2 class="h2 text-gray">
+      記得
+      <br />
+      訂閱以獲取更多資訊！
+    </h2>
+    <div class="subscribe-button">
+        <input type="email" placeholder="Your email address">
+        <button class="bg-brown text-white">Subscribe</button>
+    </div>
+  </div>
+  <nav class="bg-brown pt-20 pb-22">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <a href="index.html" class="footer-logo me-20">D'PERFUME</a>
+        <p class="text-white fw-500">© 2020. All Rights Reserved.</p>
+      </div>
+      <ul class="d-flex d-md-none">
+        <li><a href="product.html" class="text-white me-36">Product</a></li>
+        <li><a href="#" class="text-white  me-36">Blog</a></li>
+        <li><a href="#" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</footer>
     
   </body>
 </html>
